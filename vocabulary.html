@@ -46,7 +46,6 @@ function loadWord() {
     nounNo = Math.floor(Math.random() * (nouns.length));
     if(nounNo !== wordNo) {
     	document.getElementById("word").innerHTML = "<dd>" + nouns[nounNo] + "</dd>" + "<dd>" + examples[nounNo] +  "</dd>" ;
-   	wordNo = idiomNo;
     	return wordNo;
     	} 	
 	}
@@ -88,7 +87,6 @@ function loadWords2() {
     verbNo = Math.floor(Math.random() * (verbs.length));
     if(verbNo !== words2No) {
     	document.getElementById("words2").innerHTML = "<dd>" + verbs[verbNo] + "</dd>" + "<dd>" + examples[verbNo] +  "</dd>" ;
-   	words2No = idiomNo;
     	return words2No;
     	} 	
 	}
