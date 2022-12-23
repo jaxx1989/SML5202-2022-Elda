@@ -105,19 +105,19 @@ function loadWords2() {
 
 <script>
 var adjectives = [ 
-'Spanish Word: Caminar', 
-'Spanish Word: Llamar', 
-'Spanish Word: Escribir', 
-'Spanish Word: Leer', 
-'Spanish Word: Bailar',
+'Spanish Word: Nuevo / Nueva', 
+'Spanish Word: Caliente', 
+'Spanish Word: Frío / Fría', 
+'Spanish Word: Ducle', 
+'Spanish Word: Fácil',
 ];
 
 var examples = [
-'Translation: Walk',
-'Translation: Call',
-'Translation: Write',
-'Translation: Read',
-'Translation: Dance',
+'Translation: New',
+'Translation: Hot',
+'Translation: Cold',
+'Translation: Sweet',
+'Translation: Easy',
 
 ];
 
@@ -128,7 +128,6 @@ function loadWords() {
     adjectiveNo = Math.floor(Math.random() * (adjectives.length));
     if(adjectiveNo !== wordsNo) {
     	document.getElementById("words").innerHTML = "<dd>" + adjectives[adjectiveNo] + "</dd>" + "<dd>" + examples[adjectiveNo] +  "</dd>" ;
-   	adjectiveNo = idiomNo;
     	return adjectiveNo;
     	} 	
 	}
