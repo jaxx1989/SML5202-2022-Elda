@@ -71,7 +71,7 @@ var verbs = [
 'Spanish Word: Bailar',
 ];
 
-var examples = [
+var examples2 = [
 'Translation: Walk',
 'Translation: Call',
 'Translation: Write',
@@ -86,7 +86,7 @@ btn3.addEventListener("click", loadWords2);
 function loadWords2() {
     verbNo = Math.floor(Math.random() * (verbs.length));
     if(verbNo !== words2No) {
-    	document.getElementById("words2").innerHTML = "<dd>" + verbs[verbNo] + "</dd>" + "<dd>" + examples[verbNo] +  "</dd>" ;
+    	document.getElementById("words2").innerHTML = "<dd>" + verbs[verbNo] + "</dd>" + "<dd>" + examples2[verbNo] +  "</dd>" ;
     	return words2No;
     	} 	
 	}
@@ -110,7 +110,7 @@ var adjectives = [
 'Spanish Word: Fácil',
 ];
 
-var examples = [
+var examples3 = [
 'Translation: New',
 'Translation: Hot',
 'Translation: Cold',
@@ -125,7 +125,7 @@ btn4.addEventListener("click", loadWords);
 function loadWords() {
     adjectiveNo = Math.floor(Math.random() * (adjectives.length));
     if(adjectiveNo !== wordsNo) {
-    	document.getElementById("words").innerHTML = "<dd>" + adjectives[adjectiveNo] + "</dd>" + "<dd>" + examples[adjectiveNo] +  "</dd>" ;
+    	document.getElementById("words").innerHTML = "<dd>" + adjectives[adjectiveNo] + "</dd>" + "<dd>" + examples3[adjectiveNo] +  "</dd>" ;
     	return adjectiveNo;
     	} 	
 	}
