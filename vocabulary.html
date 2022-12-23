@@ -60,11 +60,11 @@ function loadWord() {
 <hr>
 
 <h2>Verb Generator</h2>
-<button id="btn2">Click Me!</button>
+<button id="btn3">Click Me!</button>
 <dl id="word"></dl>
 
 <script>
-var nouns = [ 
+var verbs = [ 
 'Spanish Word: Caminar', 
 'Spanish Word: Llamar', 
 'Spanish Word: Escribir', 
@@ -82,12 +82,12 @@ var examples = [
 ];
 
 var wordNo;
-var nounNo;
-btn2.addEventListener("click", loadWord);
+var verbNo;
+btn3.addEventListener("click", loadWord);
 function loadWord() {
-    nounNo = Math.floor(Math.random() * (nouns.length));
-    if(nounNo !== wordNo) {
-    	document.getElementById("word").innerHTML = "<dd>" + nouns[nounNo] + "</dd>" + "<dd>" + examples[nounNo] +  "</dd>" ;
+    verbNo = Math.floor(Math.random() * (verbs.length));
+    if(verbNo !== wordNo) {
+    	document.getElementById("word").innerHTML = "<dd>" + verbs[verbNo] + "</dd>" + "<dd>" + examples[verbNo] +  "</dd>" ;
    	wordNo = idiomNo;
     	return wordNo;
     	} 	
