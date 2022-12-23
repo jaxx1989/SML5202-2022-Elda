@@ -61,7 +61,7 @@ function loadWord() {
 
 <h2>Verb Generator</h2>
 <button id="btn3">Click Me!</button>
-<dl id="words"></dl>
+<dl id="words2"></dl>
 
 <script>
 var verbs = [ 
@@ -81,15 +81,15 @@ var examples = [
 
 ];
 
-var wordsNo;
+var words2No;
 var verbNo;
-btn3.addEventListener("click", loadWords);
-function loadWords() {
+btn3.addEventListener("click", loadWords2);
+function loadWords2() {
     verbNo = Math.floor(Math.random() * (verbs.length));
-    if(verbNo !== wordsNo) {
-    	document.getElementById("words").innerHTML = "<dd>" + verbs[verbNo] + "</dd>" + "<dd>" + examples[verbNo] +  "</dd>" ;
-   	wordsNo = idiomNo;
-    	return wordsNo;
+    if(verbNo !== words2No) {
+    	document.getElementById("words2").innerHTML = "<dd>" + verbs[verbNo] + "</dd>" + "<dd>" + examples[verbNo] +  "</dd>" ;
+   	words2No = idiomNo;
+    	return words2No;
     	} 	
 	}
 
