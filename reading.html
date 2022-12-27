@@ -14,6 +14,24 @@ title: Reading
 <hr>
 <h2>Crossword Puzzle</h2>
 <iframe src="https://h5p.org/h5p/embed/1335168" width="1090" height="1459" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *" title="Find the words"></iframe><script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
+<hr>
+
+<h2>Mad Lib</h2>
+
+<p>Enter your name, or any name: <input type="text" id="inputName">
+<button id="button3">Submit</button>
+</p>
+
+<p>The message will appear here: <span id="output1"></span></p>
+
+<script>
+button3.addEventListener("click", test3); 
+function test3() {
+  var yourName = document.getElementById("inputName").value;
+  document.getElementById("output1").innerHTML = yourName + "estaba comiendo";
+}
+</script>
+
 
 
 <p> <a href="index.html"> Home </a> </p>
